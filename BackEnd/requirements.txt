@@ -1,0 +1,138 @@
+# Command to Run Project
+# npm run serve
+
+# Commands To Install Project Requirements
+# npm i express
+# npm i mongoose
+# npm i express-async-handler
+# npm i jsonwebtoken
+# npm i dotnet
+# npm i cors
+
+
+# API Urls
+# 1. Get all Books Details
+# Get http://localhost:5506/api/
+
+# Response :
+
+# {
+#   "message": "Books Details",
+#   "data": [
+#     {
+#       "_id": "65032d48291fa498760ea06d",
+#       "book_name": "Life of Kiss",
+#       "book_description": "Tells about the Struggle and Happy Moments of Life",
+#       "book_author": "Emraan Hashmi",
+#       "book_published_year": "2018",
+#       "book_price": "4000",
+#       "createdAt": "2023-09-14T15:56:56.534Z",
+#       "updatedAt": "2023-09-14T15:56:56.534Z",
+#       "__v": 0
+#     },
+#     {
+#       "_id": "65032dc99ca267b49f7f4f15",
+#       "book_name": "Wings of Fire",
+#       "book_description": "Tells about the ISRO Discovery and Satellite Discovery's",
+#       "book_author": "APJ Abdul Kalam",
+#       "book_published_year": "1998",
+#       "book_price": "6000",
+#       "createdAt": "2023-09-14T15:59:05.321Z",
+#       "updatedAt": "2023-09-14T16:11:39.458Z",
+#       "__v": 0
+#     }
+#   ]
+# }
+# 2. Create a Book Record
+# Post http://localhost:5506/api/
+# Request Body
+# {
+#   "book_name":"Python Basics and Advanced of Fire", 
+#   "book_description":"Introduce to the World of Python with all it's features",
+#   "book_author":"Guido Van Rossum",
+#   "book_published_year":"1991", 
+#   "book_price":6000
+  
+# }
+
+# Response :
+# {
+#   "message": "Books Added Successfully",
+#   "data": {
+#     "book_name": "Python Basics and Advanced of Fire",
+#     "book_description": "Introduce to the World of Python with all it's features",
+#     "book_author": "Guido Van Rossum",
+#     "book_published_year": "1991",
+#     "book_price": "6000",
+#     "_id": "650339edf2340e6f1b6a56d6",
+#     "createdAt": "2023-09-14T16:50:53.304Z",
+#     "updatedAt": "2023-09-14T16:50:53.304Z",
+#     "__v": 0
+#   }
+# }
+# 3. Update a Books Record
+# PUT http://localhost:5506/api/650339edf2340e6f1b6a56d6
+# Request :
+
+# {
+#   "book_name":"Python Basics and Advanced of Fire", 
+#   "book_description":"Introduce to the World of Python with all it's features",
+#   "book_author":"G V Rossum",
+#   "book_published_year":"1991", 
+#   "book_price":6000
+  
+# }
+
+# Response :
+# {
+#   "message": "Update API Created Successfully",
+#   "books_details": {
+#     "_id": "650339edf2340e6f1b6a56d6",
+#     "book_name": "Python Basics and Advanced of Fire",
+#     "book_description": "Introduce to the World of Python with all it's features",
+#     "book_author": "G V Rossum",
+#     "book_published_year": "1991",
+#     "book_price": "6000",
+#     "createdAt": "2023-09-14T16:50:53.304Z",
+#     "updatedAt": "2023-09-14T16:51:42.376Z",
+#     "__v": 0
+#   }
+# }
+
+# 4. Get a Book Details By ID
+# GET http://localhost:5506/api/650339edf2340e6f1b6a56d6
+# Response 
+# {
+#   "message": "Get Books By ID API Created Successfully",
+#   "data": {
+#     "_id": "650339edf2340e6f1b6a56d6",
+#     "book_name": "Python Basics and Advanced of Fire",
+#     "book_description": "Introduce to the World of Python with all it's features",
+#     "book_author": "G V Rossum",
+#     "book_published_year": "1991",
+#     "book_price": "6000",
+#     "createdAt": "2023-09-14T16:50:53.304Z",
+#     "updatedAt": "2023-09-14T16:51:42.376Z",
+#     "__v": 0
+#   }
+# }
+
+# 5. Delete a Book Record
+# DELETE http://localhost:5506/api/650339edf2340e6f1b6a56d6
+
+# Response 
+
+# {
+#   "message": "Delete API Created Successfully",
+#   "data": {
+#     "_id": "650339edf2340e6f1b6a56d6",
+#     "book_name": "Python Basics and Advanced of Fire",
+#     "book_description": "Introduce to the World of Python with all it's features",
+#     "book_author": "G V Rossum",
+#     "book_published_year": "1991",
+#     "book_price": "6000",
+#     "createdAt": "2023-09-14T16:50:53.304Z",
+#     "updatedAt": "2023-09-14T16:51:42.376Z",
+#     "__v": 0
+#   }
+# }
